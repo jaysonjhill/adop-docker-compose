@@ -49,7 +49,6 @@ if [ -f ./platform.secrets.sh ]; then
 else
 	echo "Creating a new secrets file..."
 	cp ./platform.secrets.sh.example ./platform.secrets.sh
-	
 	# Check for username, prompt one if not entered and write it to secrets file
 	if [[ -z $INITIAL_ADMIN_USER ]] || [[ ${INITIAL_ADMIN_USER} = "admin" ]]; then
 		echo "You have entered an invalid username. Username can not be blank or 'admin'. Please enter a valid username: "
