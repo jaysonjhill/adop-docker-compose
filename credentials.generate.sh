@@ -90,7 +90,7 @@ fi
 
 # Source all the variables that were written to the secrets file
 echo "Sourcing variables from platform.secrets.sh file..."
-source platform.secrets.sh
+source ./platform.secrets.sh
 
 # Check to make sure the default tokens are not being used
 if  [ $INITIAL_ADMIN_PASSWORD_PLAIN == "###INITIAL_ADMIN_PASSWORD_PLAIN###" ] || \
